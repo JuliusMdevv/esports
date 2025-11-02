@@ -1,0 +1,52 @@
+body {
+    width: auto;
+    height: auto;
+    margin: 0;
+    background-color: #222;
+
+    background-image: 
+        linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+        linear-gradient(to right, #10553f 0.05rem, transparent 0.01rem),
+        linear-gradient(to bottom, #10553f 0.05rem, transparent 0.01rem);
+    background-size: 4vh 4vh;
+    background-position: center;
+    transition-duration: 200ms;
+    z-index: -10;
+
+}
+
+.content {
+    gap: 3vh;
+}
+
+
+#calendarHolder {
+    margin: 0;
+    display: flex;
+    width: auto;
+    height: auto;
+    justify-content: center;
+    z-index: -1;
+}
+
+#calendar {
+    
+    border-radius: 2vh;
+}
+
+#aboutUsMain {
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    padding: 2vw;
+}
+
+@media (max-width: 768px) {
+    #calendar{
+        width: 90vw;
+        height: 60vh;
+    }
+}

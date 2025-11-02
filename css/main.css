@@ -1,0 +1,86 @@
+body {
+    width: auto;
+    height: auto;
+    margin: 0;
+    background-color: #222;
+
+    background-image: 
+        linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+        linear-gradient(to right, #10553f 0.05rem, transparent 0.01rem),
+        linear-gradient(to bottom, #10553f 0.05rem, transparent 0.01rem);
+    background-size: 4vh 4vh;
+    background-position: center;
+    transition-duration: 200ms;
+    z-index: -10;
+
+    overflow: hidden;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+#mainText {
+        display: flex;
+        font-family: "Rubik Pixels", system-ui;
+        font-style: normal;
+        font-weight: 400;
+        text-align: center;
+        color: aliceblue;
+        font-size: 2.5vh;
+        max-width: 70vw;
+    }
+
+#mainLogo {
+    display: flex;
+    width: 30vw;
+    max-width: 400px;
+}
+
+
+@media (max-width: 768px) {
+
+
+
+    #content {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 82vh;
+        width: fit-content;
+        padding: 5vw;
+    }
+
+    #mainLogo {
+        display: flex;
+        width: 30vh;
+        height: 30vh;
+        min-width: 160px;
+        min-height: 160px;
+    }
+
+    #mainText {
+        display: flex;
+        font-family: "Rubik Pixels", system-ui;
+        font-style: normal;
+        font-weight: 400;
+        text-align: center;
+        color: aliceblue;
+        font-size: 2.5vh;
+        max-width: 80vw;
+    }
+
+
+
+
+
+
+
+
+}
