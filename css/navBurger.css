@@ -43,17 +43,16 @@
     text-decoration: none;
 }
 
-.desktop h2{
+.desktop a{
     font-family: "Rubik Pixels", system-ui;
     font-style: normal;
     font-weight: 400;
     color: aliceblue;
-    max-width: 70vw;
     text-decoration: none;
 }
 
-#left a
-#right a{
+#left h2
+#right h2{
     text-decoration: none;
     
 }
