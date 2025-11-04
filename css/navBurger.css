@@ -30,31 +30,30 @@
     width: auto;
     height: auto;
     padding: 2vw;
+    text-decoration: none;
 }
 
 #right {
     margin-left: auto;
+    text-decoration: none;
 }
 
 #left {
     margin-right: auto;
+    text-decoration: none;
 }
 
-#right a{
+.desktop h2{
     font-family: "Rubik Pixels", system-ui;
     font-style: normal;
-    font-weight: 200;
+    font-weight: 400;
     color: aliceblue;
     max-width: 70vw;
     text-decoration: none;
 }
 
-#left a{
-    font-family: "Rubik Pixels", system-ui;
-    font-style: normal;
-    font-weight: 200;
-    color: aliceblue;
-    max-width: 70vw;
+#left a
+#right a{
     text-decoration: none;
     
 }
