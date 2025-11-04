@@ -24,34 +24,47 @@
     z-index: 10;
 }
 
-.dropdowns {
-    display: none;
-    margin-left: 80vw;
-}
-.dropdowns button {
-    border: none;
-    cursor: pointer;
-    background-color: transparent;
-    color: white;
-    position: relative;
-    padding: 2vh;
+.desktop {
+    display: flex;
+    justify-content: center;
+    width: auto;
+    height: auto;
+    padding: 2vw;
 }
 
-.dropGamesContent {
+#right {
+    margin-left: auto;
+}
+
+#left {
+    margin-right: auto;
+}
+
+#right a{
+    font-family: "Rubik Pixels", system-ui;
+    font-style: normal;
+    font-weight: 200;
+    color: aliceblue;
+    max-width: 70vw;
     text-decoration: none;
-    color: white;
-    display: block;
-    display: none;
-    gap: 2vh;
 }
 
-.dropGamesContent.active {
-    display: block;
+#left a{
+    font-family: "Rubik Pixels", system-ui;
+    font-style: normal;
+    font-weight: 200;
+    color: aliceblue;
+    max-width: 70vw;
+    text-decoration: none;
+    
 }
-
 
 
 @media (max-width: 768px) {
+
+.desktop {
+    display: none;
+}
 
 .off-screen-menu {
     display: flex;
