@@ -49,7 +49,7 @@
     
     <script src="../../../js/hamburger.js"></script>
     <script>
-        const filename = window.location.pathname.split('/').pop();
+        const filename = window.location.pathname.split('/').pop().replace('.html', '');
         const coach = document.getElementById("coach");
 
         coach.innerText = filename
