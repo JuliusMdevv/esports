@@ -55,7 +55,7 @@
             .then(response => response.json())
             .then(data => {
                 const coachName = data.find(obj => obj[filename])?.[filename];
-                coach.innerText = `Our coach for ${filename} is ${coachName}!`;
+                coach.innerText = `The coach for the game is ${coachName}!`;
             })
 
         
