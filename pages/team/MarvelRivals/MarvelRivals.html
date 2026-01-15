@@ -49,13 +49,13 @@
     
     <script src="../../../js/hamburger.js"></script>
     <script>
-        const datafile = "../../../data/coaches.json"
         const filename = window.location.pathname.split('/').pop().replace('.html', '');
         const coach = document.getElementById("coach");
-        fetch(datafile)
+        fetch('../../../data/coaches.json')
             .then(response => response.json())
             .then(data => {
-                coach.innerText = data[filename];
+                const coachName = data.find(obj => obj[filename])?.[filename];
+                coach.innerText = coachName;
             })
 
         
