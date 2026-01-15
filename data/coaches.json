@@ -1,6 +1,9 @@
 [
-    {"MarvelRivals" : "David Bielik"},
-    {"SSBU" : "Isaac Yates"},
-    {"LeagueOfLegends" : "Noah Lapp"},
-    {"RocketLeague" : "TBD"}
+    {
+        "MarvelRivals" : "David Bielik",
+        "SSBU" : "Isaac Yates",
+        "LeagueOfLegends" : "Noah Lapp",
+        "RocketLeague" : "TBD"
+    }
+    
 ]
