@@ -37,7 +37,7 @@
         <h1 id="game">Marvel Rivals</h1>
 
         <div class="roster">
-            <h1 id="coach"></h1>
+            <h1 id="coach">Coach</h1>
             <div class="players">
                 <h1>Looks like you caught us at a bad time! As of right now we are still developing our roster, come back later for further information!</h1>
             </div>
@@ -55,7 +55,7 @@
             .then(response => response.json())
             .then(data => {
                 const coachName = data.find(obj => obj[filename])?.[filename];
-                coach.innerText = coachName;
+                coach.innerText = `Our coach for ${filename} is ${coachName}`;
             })
 
         
