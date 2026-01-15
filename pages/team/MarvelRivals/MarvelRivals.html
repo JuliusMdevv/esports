@@ -49,10 +49,15 @@
     
     <script src="../../../js/hamburger.js"></script>
     <script>
-        const filename = window.location.pathname.split('/').pop().replace('.html', '');
+        const filename = window.location.pathname.split('/').replace('.html', '');
         const coach = document.getElementById("coach");
+        fetch('../../data/data.json')
+            .then(response => response.json())
+            .then(data => {
+                coach.innerText = data[filename];
+            })
 
-        coach.innerText = filename
+        
     </script>
 </body>
 </html>
