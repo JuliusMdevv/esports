@@ -48,5 +48,11 @@
     </div>
     
     <script src="../../../js/hamburger.js"></script>
+    <script>
+        const filename = window.location.pathname.split('/').pop();
+        const coach = document.getElementById("coach");
+
+        coach.innerText = filename
+    </script>
 </body>
 </html>
