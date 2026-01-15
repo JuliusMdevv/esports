@@ -54,8 +54,8 @@
         fetch('../../../data/coaches.json')
             .then(response => response.json())
             .then(data => {
-                // const coachName = data.find(obj => obj[filename])?.[filename];
-                coach.innerText = `Our coach for this game is ${data[filename]}!`;
+                const coachName = data.find(obj => obj[filename])?.[filename];
+                coach.innerText = `Our coach for this game is ${coachName}!`;
             })
 
         
