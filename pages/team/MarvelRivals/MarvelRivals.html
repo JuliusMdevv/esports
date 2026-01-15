@@ -51,7 +51,7 @@
     <script>
         const filename = window.location.pathname.split('/').replace('.html', '');
         const coach = document.getElementById("coach");
-        fetch('../../data/data.json')
+        fetch('../../../data/data.json')
             .then(response => response.json())
             .then(data => {
                 coach.innerText = data[filename];
