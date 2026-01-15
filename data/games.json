@@ -1,0 +1,18 @@
+{
+    "MarvelRivals": {
+        "coach": "David Bielik",
+        "img": "marvelrivals.png"
+    },
+    "SSBU": {
+        "coach": "Isaac Yates",
+        "img": "ssbu.png"
+    },
+    "LeagueOfLegends": {
+        "coach": "Noah Lapp",
+        "img": "lol.png"
+    },
+    "RocketLeague": {
+        "coach": "yet to be determined",
+        "img": "rocketleague.png"
+    }
+}
