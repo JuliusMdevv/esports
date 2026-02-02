@@ -1,6 +1,6 @@
 body {
-    width: auto;
-    height: auto;
+    width: 100vw;
+    height: 100vh;
     margin: 0;
     background-color: #222;
 
@@ -14,14 +14,112 @@ body {
     z-index: -10;
 
     overflow-x: hidden;
+
+    
+    font-family: "Rubik Pixels", system-ui;
+    font-style: normal;
+    font-weight: 100;
+    text-align: center;
+    color: aliceblue;
+
+    
 }
+
 
 .content {
     display: flex;
     flex-direction: column;
-    font-family: "Rubik Pixels", system-ui;
-    font-style: normal;
-    font-weight: 400;
-    text-align: center;
-    color: aliceblue;
+    justify-content: center;
+    align-items: center;
+}
+
+.infoHolder img {
+    max-width: 30vw;
+    border: solid #10553f;
+    border-radius: 1rem;
+}
+
+#qBlock {
+    display: flex;
+        flex-direction: column;
+        width: 60vw;
+        height: auto;
+        background-color: #111;
+        border-radius: 2vw;
+}
+
+
+#qHolder {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    background-color: #10553f;
+    border-top-left-radius: 2vw;
+    border-top-right-radius: 2vw;
+}
+
+#gameInfo {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    #gameInfo h2 {
+        font-weight: 200;
+        font-size: large;
+    }
+
+
+
+
+
+@media (max-width: 768px) {
+    .infoHolder img {
+        max-width: 80vw;
+        height: fit-content;
+        border-radius: 5vw;
+        border: solid #10553f;
+    }
+
+    .infoHolder {
+        display: flex;
+        flex-direction: column;
+        gap: 4vh;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #coach {
+        font-size: 1.7rem
+    }
+
+
+
+    #qBlock {
+        display: flex;
+        flex-direction: column;
+        width: 90vw;
+        height: auto;
+        background-color: #111;
+        border-radius: 5vw;
+    }
+
+    #gameInfo {
+        padding: .5rem;
+    }
+
+    #gameInfo h2 {
+        font-weight: 200;
+        font-size: medium;
+    }
+
+    #qHolder {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        background-color: #10553f;
+        border-top-left-radius: 2vw;
+        border-top-right-radius: 2vw;
+        padding: .5rem;
+    }
+    
 }

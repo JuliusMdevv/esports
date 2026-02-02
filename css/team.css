@@ -183,4 +183,8 @@ body {
     .widgetText {
         font-size: 5vw;
     }
+
+    .gameWidget .widgetImageContainer {
+        opacity: 1;
+    }
 }

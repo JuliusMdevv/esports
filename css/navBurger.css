@@ -1,3 +1,20 @@
+body {
+    width: auto;
+    height: auto;
+    margin: 0;
+    background-color: #222;
+
+    background-image: 
+        linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+        linear-gradient(to right, #10553f 0.05rem, transparent 0.01rem),
+        linear-gradient(to bottom, #10553f 0.05rem, transparent 0.01rem);
+    background-size: 4vh 4vh;
+    background-position: center;
+    transition-duration: 200ms;
+    z-index: -10;
+}
+
+
 .off-screen-menu {
     display: none;
     font-family: "Montserrat", sans-serif;
@@ -28,6 +45,7 @@
 .desktop {
     display: flex;
     justify-content: center;
+    align-items: center;
     width: auto;
     height: auto;
     padding: 2vw;
@@ -59,10 +77,49 @@
     text-decoration: none;
 }
 
+.promo {
+    display: none;
+}
+
+.off-screen-menu img {
+    display: flex;
+    width: 2rem;
+    height: auto;
+}
+
+#socials  {
+    display: flex;
+    flex-direction: row;
+    gap: .6rem;
+}
+
+#right img {
+    display: flex;
+    width: 1.8rem;
+    height: auto;
+    flex-direction: row;
+}
 
 
 
 @media (max-width: 768px) {
+
+.promo {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    width: 75vw;
+    height: 1rem;
+    background-color: #10553f;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.promo h6{
+    font-size: .7rem;
+    font-weight: 100;
+}
 
 #left,
 #right {
@@ -77,6 +134,7 @@
 .off-screen-menu a {
     text-decoration: none;
     color: aliceblue;
+    margin-top: 1rem;
 }
 
 .content {
@@ -104,8 +162,10 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    font-size: 3rem;
+    font-size: 2.2rem;
     transition: .3s ease;
+    gap: 2.5vh;
+    
 }
 
 .off-screen-menu.active {

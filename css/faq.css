@@ -1,0 +1,128 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    background-color: #222;
+
+    background-image: 
+        linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+        linear-gradient(to right, #10553f 0.05rem, transparent 0.01rem),
+        linear-gradient(to bottom, #10553f 0.05rem, transparent 0.01rem);
+    background-size: 4vh 4vh;
+    background-position: center;
+    transition-duration: 200ms;
+    z-index: -10;
+    justify-content: center;
+    align-items: center;
+
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+body .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    gap: 3%;
+    max-height: 90vh;
+}
+
+
+.container {
+    display: flex;
+    width: 60vw;
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #111;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    border-radius: 1rem;
+
+}
+
+.green {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    background-color: #10553f;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+
+.q {
+    display: flex;
+    font-weight: 500;
+    color: aliceblue;
+    padding: .5rem;
+}
+
+.a {
+    padding-left: 1vw; 
+    padding-right: 1vw;
+    display: flex;
+    font-weight: 200;
+    color: aliceblue;
+}
+
+.a a {
+    /* text-decoration: none; */
+    display: flex;
+    color: aliceblue;
+    text-align: justify;
+}
+
+#special {
+    color: aliceblue;
+    text-decoration: underline;
+}
+
+.faqPromo {
+    display: flex;
+    position: absolute;
+    height: 2rem;
+    width: auto;
+    background-color: #10553f;
+    margin-top: auto;
+    align-self: flex-end;
+    justify-self: center;
+    padding: .2rem;
+    border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: -.8rem;
+}
+
+.faqPromo h6 {
+    color: aliceblue;
+    font-family: "Montserrat", sans-serif;
+}
+
+
+@media (max-width: 768px) {
+
+    .faqPromo {
+        display: none;
+    }
+
+    body {
+        max-height: 90vh;
+        overflow-y: scroll;
+    }
+
+    .container {
+        width: 90vw;
+    }
+
+    .a {
+        padding-left: 5vw;
+        padding-right: 5vw;
+        padding-top: 1vh;
+        padding-bottom: 1vh;
+    }
+}
