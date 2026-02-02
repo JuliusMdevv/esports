@@ -143,10 +143,26 @@ body {
     color: aliceblue;
 }
 
+.textHolder {
+    display: flex;
+    background-color: #111;
+    width: 50vw;
+    height: auto;
+    padding: .5rem;
+    justify-self: center;
+    border: #10553f solid;
+    border-radius: 1rem;
+}
+
 @media (max-width: 768px) {
 
+    .textHolder {
+        width: 90vw;
+    }
+
     #mainText {
-        max-width: 80vw;
+        font-size: small;
+        max-width: 90vw;
     }
 
 
